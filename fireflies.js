@@ -17,7 +17,10 @@ Dedicated to Nathan Fillion, for obvious reasons
 	
 	var basic = {
 		flies : ['&bull;','.',],
-		bugs : 100
+		bugs  : 100,
+		color : '#000',
+		speed : 1500,
+		size : 12
 	}
 
 	$.fireflies = function(settings) {
@@ -49,7 +52,9 @@ Dedicated to Nathan Fillion, for obvious reasons
 			'position':'absolute',
 			'z-index': '-1',
 			'top' : $.fireflies.random(($(window).height()-50)),
-			'left' :  $.fireflies.random(($(window).width()-50))
+			'left' :  $.fireflies.random(($(window).width()-50)),
+			'color' : $.fireflies.settings.color,
+			'font-size' : $.fireflies.settings.size + "px"
 		}
 
 		// Return the fly and add its css
@@ -66,7 +71,7 @@ Dedicated to Nathan Fillion, for obvious reasons
 			top: $.fireflies.random(($(window).height()-50)),	//offsets
 			left: $.fireflies.random(($(window).width()-50)),
 			"opacity" : $.fireflies.random(10)
-		}, (($.fireflies.random(10) + 5) * 1500),function(){  $.fireflies.fly(fly) } );
+		}, (($.fireflies.random(10) + 5) * $.fireflies.settings.speed),function(){  $.fireflies.fly(fly) } );
 
 	};
 

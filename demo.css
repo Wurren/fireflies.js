@@ -2,7 +2,7 @@
 	@import url(http://fonts.googleapis.com/css?family=Terminal+Dosis);
 
 	body {
-		background-color:#333;
+		background-color:#222;
 	}
 
 	.bug {
@@ -16,21 +16,22 @@
 		margin:0px;
 		padding:0px;
 		font-size:32px;
+		color:#fff;
 	}
 
 	p {
 		font-family:arial, helvetica, sans-serif;
 		font-size:12px;
 		line-height:18px;
-		color:#888;
+		color:#fff;
 	}
 
 	.about {
-		width:300px;
-		background-color:#fff;
-		-webkit-box-shadow:0px 0px 10px rgba(0,0,0,0.5);
-		-moz-box-shadow:0px 0px 10px rgba(0,0,0,0.5);
-		box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+		width:400px;
+		background-color:rgba(0,0,0,0.5);
+		-webkit-border-radius:3px;
+		-moz-border-radius:3px;
+		border-radius:3px;
 		position:fixed;
 		bottom:40px;
 		left:40px;
@@ -38,6 +39,14 @@
 		padding:20px;
 	}
 
+	a {
+		color: orange;
+	}
+
 	.highlight {
 		color:orange;
+	}
+
+	.share {
+		margin: 30px 0 0 0;
 	}

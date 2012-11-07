@@ -2,23 +2,45 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
+	<title>Fireflies</title>
 	<link rel="stylesheet" href="demo.css" />
 </head>
 <body>
 
 <div class="about">
-<h1> Fireflies <span class="highlight">1.0</span></h1>
-<p>A wee small jQuery plugin to generate some fireflies on your page. Download the Commented Source from github</p>
-<p><a href="https://github.com/Wurren/fireflies.js">Github</a>
+
+	<h1> Fireflies <span class="highlight">2</span></h1>
+
+	<p>A wee small jQuery plugin to generate some fireflies on your page. Download the Commented Source from github</p>
+
+	<p><a href="https://github.com/Wurren/fireflies.js">Fork me on Github</a> / <a href="http://www.twitter.com/warrenhaskins">@warrenhaskins</a></p>
+
+	<div class="share">
+		<!-- AddThis Button BEGIN -->
+		<div class="addthis_toolbox addthis_default_style ">
+		<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+		<a class="addthis_button_tweet"></a>
+		<a class="addthis_button_pinterest_pinit"></a>
+		<a class="addthis_counter addthis_pill_style"></a>
+		</div>
+		<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+		<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=warrenhaskins"></script>
+		<!-- AddThis Button END -->
+	</div>
+
 </div>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="firefly.js"></script>
+<script type="text/javascript" src="fireflies.js"></script>
 <script type="text/javascript">
 
-$.fireflies({bugs : 100});
+$.fireflies({
+	bugs : 75,
+	color : 'orange',
+	speed : 1000
+});
 
 </script>
+
 </body>
 </html>
